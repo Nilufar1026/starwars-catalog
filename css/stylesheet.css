@@ -46,8 +46,8 @@ h1{
 }
 
 .card-1,.card-2{
-    max-width: 484px;
-    max-height: 624px;
+    width: 484px;
+    height: 624px;
     border-radius: 10px 10px 0px 0px;
     margin-top: -30px;
     margin-bottom: 60px;
@@ -57,10 +57,6 @@ h1{
     max-height: 60px;
 }
 h2{
-    width: 183px;
-    height: 31px;
-    left: 151px;
-    top: 21px;
     font-family: Ropa Sans;
     font-style: normal;
     font-weight: normal;
@@ -69,7 +65,9 @@ h2{
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFD600;
-    margin: 5px 20px 5px 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
 }
 
 
@@ -79,6 +77,13 @@ h2{
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
 }
 .dark{
     background-color:  #E1DEDE;
@@ -86,6 +91,13 @@ h2{
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.15em;
+    color: #535556;
 }
 ul{
     list-style: none;
@@ -99,28 +111,25 @@ ul{
 }
 .card-footer{
     background-color: #C4C4C4;
-    height: 60px;
+    height: 195px;
 }
 
 .card2-header{
     background-color:#748687;
     max-height: 60px;
 }
-h3{
-    margin: 0px;
+h3.title1{
+    margin: 0px auto auto 10px;
     padding-top: 0px;
-    padding-left: 10px;
-    width: 308px;
-    height: 40px;
-    left: 21px;
-    top: 13px;
+    max-width: 308px;
+    max-height: 40px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 35px;
-    letter-spacing: 0.2em;
     color: #000000;
+    letter-spacing: 0.2em;
 }
 .card2-body{
     background-color: #C4C4C4;
@@ -131,4 +140,48 @@ h3{
     max-width:  484px;
     max-height: 287px;
     background-color: #8E8E8E;
+}
+
+p.text1{
+    margin: 0px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    color: #000000;
+}
+h3.title2{
+    margin: 0px auto auto 10px;
+    padding-top: 5px;
+    max-width: 308px;
+    max-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    letter-spacing: 0.2em;
+}
+p.text2{
+    margin: 0px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    color:#FFFFFF;
+    padding-bottom: 80px;
+}
+
+.light:hover{
+    background-color: #444444;
+}
+.dark:hover{
+    background-color: #444444;
 }
