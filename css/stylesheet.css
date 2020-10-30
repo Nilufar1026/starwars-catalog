@@ -1,14 +1,13 @@
-
+body {
+    margin: 0%;
+}
 .wrapper{
     max-width: 1440px;
+    
 }
 
-/* img{
-    max-width: 100%;
-    max-height: 100%;
-} */
 header{
-    background-image: url(../assets/sw-header.jpg);
+    background-image: url(../assets/sw-header.jpg); 
     max-width: 1440px;
     max-height: 353px;
 }
@@ -23,7 +22,7 @@ h1{
     height: 143px;
     left: 67px;
     top: 105px;
-    font-family: Ropa Sans;
+    font-family: 'Ropa Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
@@ -48,16 +47,16 @@ h1{
 .card-1,.card-2{
     width: 484px;
     height: 624px;
-    border-radius: 10px 10px 0px 0px;
     margin-top: -30px;
     margin-bottom: 60px;
 }
 .card-header{
     background-color: #535556;
     max-height: 60px;
+    border-radius: 10px 10px 0px 0px;
 }
 h2{
-    font-family: Ropa Sans;
+    font-family: 'Ropa Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -117,6 +116,7 @@ ul{
 .card2-header{
     background-color:#748687;
     max-height: 60px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card2-body{
