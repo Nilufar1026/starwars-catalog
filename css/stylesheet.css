@@ -71,7 +71,7 @@ h2{
 }
 
 
-.light{
+.light,li.light2,li.light3{
     background-color: #8E8E8E;
     max-height: 55px;
     padding-left: 10px;
@@ -126,7 +126,7 @@ ul{
 }
 .card2-footer{
     max-width: 484px;
-    height: 204px;
+    height: 244px;
     background-color: #8E8E8E;
 }
 .title1{
@@ -184,7 +184,7 @@ ul{
     display: none;
 }
 
-.light:hover{
+.light:hover,li.light2:hover,li.light3:hover{
     background-color: #444444;
 }
 .dark:hover{
