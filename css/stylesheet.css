@@ -118,7 +118,18 @@ ul{
     background-color:#748687;
     max-height: 60px;
 }
-h3.title1{
+
+.card2-body{
+    background-color: #C4C4C4;
+    max-width: 484px;
+    height: 179px;
+}
+.card2-footer{
+    max-width: 484px;
+    height: 204px;
+    background-color: #8E8E8E;
+}
+.title1{
     margin: 0px auto auto 10px;
     padding-top: 0px;
     max-width: 308px;
@@ -130,19 +141,9 @@ h3.title1{
     line-height: 35px;
     color: #000000;
     letter-spacing: 0.2em;
+    display: none;
 }
-.card2-body{
-    background-color: #C4C4C4;
-    max-width: 484px;
-    max-height: 550px;
-}
-.card2-footer{
-    max-width:  484px;
-    max-height: 287px;
-    background-color: #8E8E8E;
-}
-
-p.text1{
+.text1{
     margin: 0px;
     padding-left: 10px;
     font-family: 'Roboto', sans-serif;
@@ -152,8 +153,10 @@ p.text1{
     line-height: 21px;
     letter-spacing: 0.2em;
     color: #000000;
+    display: none;
+    
 }
-h3.title2{
+.title2{
     margin: 0px auto auto 10px;
     padding-top: 5px;
     max-width: 308px;
@@ -165,8 +168,9 @@ h3.title2{
     line-height: 35px;
     color: #FFFFFF;
     letter-spacing: 0.2em;
+    display: none;
 }
-p.text2{
+.text2{
     margin: 0px;
     padding-left: 10px;
     font-family: 'Roboto', sans-serif;
@@ -177,6 +181,7 @@ p.text2{
     letter-spacing: 0.2em;
     color:#FFFFFF;
     padding-bottom: 80px;
+    display: none;
 }
 
 .light:hover{
@@ -185,3 +190,10 @@ p.text2{
 .dark:hover{
     background-color: #444444;
 }
+
+
+
+.title1.visible,.text1.visible,.title2.visible,.text2.visible {
+    display: block;
+} 
+
