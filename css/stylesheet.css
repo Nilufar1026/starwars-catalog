@@ -110,7 +110,10 @@ ul{
     margin-bottom: 0px;
 }
 
-.card-footer{
+.card-footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #C4C4C4;
     height: 195px;
 }
@@ -143,6 +146,9 @@ ul{
     color: #FFFFFF;
 }
 
+.vector {
+    font-size: 30px;
+}
 p, .planet_details {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
