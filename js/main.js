@@ -10,7 +10,7 @@ async function charactersList(page){
 async function renderCharactersList(){
     const characters = await charactersList(pages)
     for (let i = 0; i < characters.length; i++){
-        document.querySelector(".char-"+i).innerHTML = characters[i].name
+        document.querySelector(".char-"+i).innerText = characters[i].name
     }
 
     const elementLi = document.querySelectorAll("li") 
@@ -20,12 +20,12 @@ async function renderCharactersList(){
                 if(currentCharacter == elementLi[j]){
                     document.querySelector(".name").innerText = characters[j].name
                     document.querySelector(".height").innerText = "Height: " + characters[j].height
-                    document.querySelector(".mass").innerHTML = "Mass: " + characters[j].mass 
-                    document.querySelector(".hair_color").innerHTML = "Hair color: " + characters[j].hair_color
-                    document.querySelector(".skin_color").innerHTML = "Skin color: " + characters[j].skin_color 
-                    document.querySelector(".eye_color").innerHTML = "Eye color: " + characters[j].eye_color
-                    document.querySelector(".birth_year").innerHTML = "Birth year: " + characters[j].birth_year
-                    document.querySelector(".gender").innerHTML = "Gender: " + characters[j].gender
+                    document.querySelector(".mass").innerText = "Mass: " + characters[j].mass 
+                    document.querySelector(".hair_color").innerText = "Hair color: " + characters[j].hair_color
+                    document.querySelector(".skin_color").innerText = "Skin color: " + characters[j].skin_color 
+                    document.querySelector(".eye_color").innerText = "Eye color: " + characters[j].eye_color
+                    document.querySelector(".birth_year").innerText = "Birth year: " + characters[j].birth_year
+                    document.querySelector(".gender").innerText = "Gender: " + characters[j].gender
                     
                     fetch(characters[j].homeworld)
                     .then((resp) => resp.json())
