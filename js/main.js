@@ -46,5 +46,27 @@ async function renderCharactersList(){
 
 renderCharactersList()
 
+const next=document.querySelector(".next")
+const previous=document.querySelector(".prev")
+var i = 0;
+next.addEventListener("click",function(){
+    if (i < 8 ) {
+        i++;
+    } else if (i = 8) {
+        i = 1;
+    }
+    document.querySelector(".number").innerText = i;
+  
+ })
+
+ previous.addEventListener("click",function(){
+    if (i > 1) {
+        --i;
+    } else if (i = 1) {
+        i = 8;
+    }
+    document.querySelector(".number").innerText = i;
+  
+ })
 
 
