@@ -1,9 +1,8 @@
-body {
+body{
     margin: 0%;
 }
 .wrapper{
-    max-width: 1440px;
-    
+    max-width: 1440px;   
 }
 
 header{
@@ -17,6 +16,7 @@ main{
     max-width: 1440px;
     max-height: 677px;
 }
+
 h1{
     width: 500px;
     height: 143px;
@@ -33,20 +33,21 @@ h1{
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
 .card{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
 }
-.card-1{
+
+/* .card-1{
     display: flex;
     flex-direction: column;
-}
+} */
 
 .card-1,.card-2{
     width: 484px;
-    height: 624px;
+    height: auto;
     margin-top: -30px;
     margin-bottom: 60px;
 }
@@ -55,6 +56,7 @@ h1{
     max-height: 60px;
     border-radius: 10px 10px 0px 0px;
 }
+
 h2{
     font-family: 'Ropa Sans', sans-serif;
     font-style: normal;
@@ -68,7 +70,6 @@ h2{
     padding-bottom: 5px;
     margin: 0px;
 }
-
 
 .light,li.light2,li.light3{
     background-color: #8E8E8E;
@@ -98,6 +99,7 @@ h2{
     letter-spacing: 0.15em;
     color: #535556;
 }
+
 ul{
     list-style: none;
     display: flex;
@@ -106,8 +108,8 @@ ul{
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-
 }
+
 .card-footer{
     background-color: #C4C4C4;
     height: 195px;
@@ -122,13 +124,39 @@ ul{
 .card2-body{
     background-color: #C4C4C4;
     max-width: 484px;
-    height: 179px;
+    height: 287px;
 }
+
 .card2-footer{
     max-width: 484px;
-    height: 244px;
+    height: 287px;
     background-color: #8E8E8E;
 }
+
+.name, .name_planet {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 3% 0 3% 5%;
+}
+
+.name_planet {
+    color: #FFFFFF;
+}
+
+p, .planet_details {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    margin: 0%;
+    padding: 1% 0 1% 5%;
+}
+.planet_details{
+    color: #FFFFFF;
+}
+
 .title1{
     margin: 0px auto auto 10px;
     padding-top: 0px;

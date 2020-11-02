@@ -1,41 +1,50 @@
-const chooseList=document.querySelector(".char")
-const cardDetailsTitle1 = document.querySelector(".title1")
-const cardDetailsText1 = document.querySelector(".text1")
-const cardDetailsTitle2 = document.querySelector(".title2")
-const cardDetailsText2 = document.querySelector(".text2")
+const pages = 1
 
-function showDetails(){
-    cardDetailsTitle1.classList.add("visible") 
-    cardDetailsText1.classList.add("visible") 
-    cardDetailsTitle2.classList.add("visible") 
-    cardDetailsText2.classList.add("visible") 
+async function charactersList(page){
+   
+    const response = await fetch("https://swapi.dev/api/people/")
+    const data = await response.json() 
+    return data.results
 }
-function hideDetails(){
-    cardDetailsTitle1.classList.remove("visible") 
-    cardDetailsText1.classList.remove("visible") 
-    cardDetailsTitle2.classList.remove("visible") 
-    cardDetailsText2.classList.remove("visible") 
-}
-// chooseList.addEventListener("click",showDetails)
 
-chooseList.addEventListener("click",function(event){
-    if(event.type=="click"){
-        showDetails()
-    }else{
-        hideDetails()
+async function renderCharactersList(){
+    const characters = await charactersList(pages)
+    for (let i = 0; i < characters.length; i++){
+        document.querySelector(".char-"+i).innerHTML = characters[i].name
     }
-})
 
+    const elementLi = document.querySelectorAll("li") 
+    for(let currentCharacter of elementLi){
+        currentCharacter.addEventListener("click", function(event){
+            for(let j = 0; j < elementLi.length; j++){
+                if(currentCharacter == elementLi[j]){
+                    document.querySelector(".name").innerText = characters[j].name
+                    document.querySelector(".height").innerText = "Height: " + characters[j].height
+                    document.querySelector(".mass").innerHTML = "Mass: " + characters[j].mass 
+                    document.querySelector(".hair_color").innerHTML = "Hair color: " + characters[j].hair_color
+                    document.querySelector(".skin_color").innerHTML = "Skin color: " + characters[j].skin_color 
+                    document.querySelector(".eye_color").innerHTML = "Eye color: " + characters[j].eye_color
+                    document.querySelector(".birth_year").innerHTML = "Birth year: " + characters[j].birth_year
+                    document.querySelector(".gender").innerHTML = "Gender: " + characters[j].gender
+                    
+                    fetch(characters[j].homeworld)
+                    .then((resp) => resp.json())
+                    .then(function(data) {
+                        document.querySelector(".name_planet").innerText =  data.name
+                        document.querySelector(".rotation_period").innerText =  "Rotation period: " + data.rotation_period
+                        document.querySelector(".orbital_period").innerText =  "Orbital period: " + data.orbital_period
+                        document.querySelector(".diameter").innerText =  "Diameter: " + data.diameter
+                        document.querySelector(".climate").innerText =  "Climate: " + data.climate
+                        document.querySelector(".gravity").innerText =  "Gravity: " + data.gravity
+                        document.querySelector(".terrain").innerText =  "Terrain: " + data.terrain
+                    })                  
+                } 
+            }           
+        })         
+    }   
+}
 
+renderCharactersList()
 
-
- 
-
-// var starWarsPeopleList = document.querySelector('ul');
-// fetch('https://swapi.dev/api/people/') 
-
-// .then(function(response) { 
-// console.log(response)
-// })
 
 
