@@ -73,7 +73,7 @@ h2{
     margin: 0px;
 }
 
-.light,li.light2,li.light3{
+.light{
     background-color: #8E8E8E;
     max-height: 55px;
     padding-left: 10px;
@@ -111,14 +111,13 @@ li{
     padding-left: 0px; 
     margin-top: 0px;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 
 .card-footer{ 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #C4C4C4; */
-    /* height: auto; */
 }
 
 .card2-header{
@@ -135,7 +134,7 @@ li{
 
 .card2-footer{
     max-width: 484px;
-    height: 287px;
+    height: 272px;
     background-color: #8E8E8E;
 }
 
@@ -301,62 +300,8 @@ p, .planet_details, .pages{
     justify-content: center;
     align-items: center;
 }
-.title1{
-    margin: 0px auto auto 10px;
-    padding-top: 0px;
-    max-width: 308px;
-    max-height: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-    color: #000000;
-    letter-spacing: 0.2em;
-    display: none;
-}
-.text1{
-    margin: 0px;
-    padding-left: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    color: #000000;
-    display: none;
-    
-}
-.title2{
-    margin: 0px auto auto 10px;
-    padding-top: 5px;
-    max-width: 308px;
-    max-height: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-    color: #FFFFFF;
-    letter-spacing: 0.2em;
-    display: none;
-}
-.text2{
-    margin: 0px;
-    padding-left: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    color:#FFFFFF;
-    padding-bottom: 80px;
-    display: none;
-}
 
-.light:hover,li.light2:hover,li.light3:hover{
+.light:hover{
     background-color: #444444;
 }
 .dark:hover{
@@ -364,8 +309,4 @@ p, .planet_details, .pages{
 }
 
 
-
-.title1.visible,.text1.visible,.title2.visible,.text2.visible {
-    display: block;
-} 
 
