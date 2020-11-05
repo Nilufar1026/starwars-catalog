@@ -3,7 +3,7 @@ let pages = 1
 
 async function charactersList(){
    // kolla i cache 
-    const response = await fetch("http://swapi.dev/api/people/?page="+pages)
+    const response = await fetch("https://swapi.dev/api/people/?page="+pages)
     const data = await response.json() 
     return data.results
 }
